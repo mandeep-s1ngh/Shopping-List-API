@@ -2,25 +2,44 @@
 
 ## <ins>Summary</ins>
 
-This is a restful API built with Express and PostgreSQL, using the node-postgres library to interact with the database. It uses localhost to connect to the PostgreSQL server.
+This is a RESTful API built with Express and PostgreSQL, using the node-postgres library to interact with the PostgreSQL database. The app runs on localhost port 3000.
 
 The purpose of this API is to provide endpoints for managing a shopping list database which gives the ability to add new items, retrieve all items, retrieve a single item by ID, and delete an item. Error handling middleware has also been setup to provide the appropriate error codes and messages.
 
-I also wanted to solidify my understanding of API's and that tech stack having learnt them whilst enrolled on the NorthCoders Software Engineering bootcamp.
+I also wanted to solidify my understanding of RESTful API's, Express, PostgreSQL having learnt them whilst enrolled on the NorthCoders Software Engineering bootcamp.
 
 ## <ins>List of endpoints</ins>
 
-- `POST /api/new-item`
-- `GET api/all-items`
-- `GET api/item/:item_id`
-- `DELETE api/remove-item/:item_id`
+NOTE: All requests and responses are in JSON format.
 
-All requests and responses are in JSON format.
+### `POST localhost:3000/api/new-item`
+
+![POST new item](./screenshots/post%20request%20-%20new%20item.png)
+
+### `GET locahost:3000/api/all-items`
+
+![GET all items](./screenshots/get%20request%20-%20all%20items.png)
+
+### `GET localhost:3000/api/item/:item_id`
+
+![GET single item](./screenshots/get%20request%20-%20single%20item.png)
+
+### `DELETE localhost:3000/api/remove-item/:item_id`
+
+![DELETE single item](./screenshots/delete%20request%20-%20single%20item.png)
 
 ## <ins>Local Setup</ins>
 
-I used [postgres.app](https://postgresapp.com/) to be able to access the PostgreSQL command line interface and create the database. I also used [Insomnia](https://insomnia.rest/) to make the requests to the various endpoints.
+1. Install [postgres.app](https://postgresapp.com/) which will allow you to be able to access the PostgreSQL command line interface and create the database.
 
-Once you have those setup, feel free to clone the repo and install the dependencies with `npm install`
+NOTE: If you are on Windows OS, you can use [postgreSQL](https://www.postgresql.org/download/windows/)
 
-You can then run `psql -f db.sql` in the terminal from the root of the project to setup the database and table followed by `npm run dev` to start the app and test the endpoints via Insomnia.
+2. Install [Insomnia](https://insomnia.rest/) which will allow you to make the requests to the various endpoints.
+
+3. Open up your terminal and run `git clone https://github.com/mandeep-s1ngh/Shopping-List-API.git` to clone the repo.
+
+4. Move the folder to your usual directory for projects (if necessary).
+
+5. Open up the folder in your code editor of choice and run `npm install` in it's integrated terminal to install all the dependencies.
+
+6. Then run `psql -f db.sql` to setup the database and table followed by `npm run dev` to start the app. The app will continue to run in the background and you can then test the endpoints via Insomnia.
