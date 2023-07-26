@@ -8,7 +8,9 @@ The purpose of this API is to provide endpoints for managing a shopping list dat
 
 I also wanted to solidify my understanding of RESTful API's, Express, PostgreSQL having learnt them whilst enrolled on the NorthCoders Software Engineering bootcamp.
 
-## <ins>List of endpoints</ins>
+---
+
+## <ins>Endpoints & Screenshots</ins>
 
 NOTE: All requests and responses are in JSON format.
 
@@ -27,6 +29,15 @@ NOTE: All requests and responses are in JSON format.
 ### `DELETE localhost:3000/api/remove-item/:item_id`
 
 ![DELETE single item](./screenshots/delete%20request%20-%20single%20item.png)
+
+---
+
+## <ins>Tech Stack</ins>
+
+- Express.JS
+- PostgreSQL
+
+---
 
 ## <ins>Local Setup</ins>
 
