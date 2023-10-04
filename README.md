@@ -35,6 +35,7 @@ NOTE: All requests and responses are in JSON format.
 ## <ins>Tech Stack</ins>
 
 - Express.JS
+- JavaScript
 - PostgreSQL
 
 ---
